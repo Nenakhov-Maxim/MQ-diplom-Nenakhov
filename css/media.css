@@ -1,0 +1,58 @@
+    @media (max-width: 1200px) {
+        h1 {
+            margin-left: 85px;
+        }
+        .header-logo-wrapper {
+            margin-bottom: 181px;
+        }
+        .header-title {
+            margin-bottom: 312px;
+        }
+        .position {
+            flex-wrap: wrap;
+        }
+        .card-img {
+            width: 100%;
+        }
+        .card-subject {
+            width: 100%;
+        }
+        .position {
+            left: 33px;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            top: calc( (100vw - 768px) / (1200 - 768) * (712.5 - 422.5) + 422.5px);
+        }
+        .card-subject h2 {
+            margin-bottom: 38px;
+            margin-left: 26px;
+            margin-top: 91px;
+        }
+        .card-text {
+            margin-left: 26px;
+            margin-bottom: 49px;
+        }
+        .card-item:nth-child(n+2) .position {
+            top: calc( (100vw - 768px) / (1200 - 768) * (822.5 - 492.5) + 492.5px);
+        }
+        .download-app-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            flex-direction: column;
+        }
+        .download-app-icon {
+            margin-bottom: 83px;
+        }
+        .download-app {
+            padding-top: 115px;
+        }
+        .footer-buttons-wrapper {
+            margin-top: 288px;
+        }
+        .footer-logo-wrapper {
+            margin-top: 55px;
+            padding-bottom: 24px;
+        }
+    }
