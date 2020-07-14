@@ -363,6 +363,7 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .position {
@@ -401,7 +402,7 @@ h3 {
 
 .card-item:nth-child(2n+2) .card-subject {  
     width: calc(50% - 221px);  
-    padding-right: 90px; 
+    padding-left: 4%;
 }
 
 .card-subject h2 {
