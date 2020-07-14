@@ -1,3 +1,32 @@
+    @media (min-width: 1920px) {
+        .main-inner::after {
+            content: "";
+            position: absolute;
+            background-image: url(../images/footballer_566.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 908px;
+            width: 566px;
+            top: 26px;
+            left: 390px;
+        }
+
+        .main-inner::before {
+            content: "";
+            position: absolute;
+            background-image: url(../images/basketballer_991.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 991px;
+            height: 815px;
+            top: 957px;
+            left: 803px;
+        }
+    }    
+        
+    
+    
     @media (max-width: 1200px) {
         h1 {
             margin-left: 85px;

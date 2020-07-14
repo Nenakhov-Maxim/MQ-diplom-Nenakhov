@@ -88,7 +88,7 @@ h3 {
     justify-content: center;
     align-items: center;
     z-index: 2;
-    margin: 0 auto;    
+    margin: 0 auto;        
     /*margin-left: calc( (100vw - 768px) / (1920 - 768) * (185 - 85) + 85px);*/
 }
 
