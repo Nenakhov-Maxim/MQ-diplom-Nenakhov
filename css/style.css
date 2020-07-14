@@ -18,6 +18,12 @@ html {
 
 body {
     margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
 }
 
 a {
@@ -41,7 +47,12 @@ textarea {
 
 h1 {
     font-size: calc( (100vw - 768px) / (1920 - 768) * (90 - 64) + 64px);
-    /*90px;*/
+    
+}
+h3 {
+    font-size: inherit;
+    margin: 0;
+    font-weight: inherit;
 }
 
 .ul {
@@ -68,14 +79,17 @@ h1 {
 }
 
 .container {
+    max-width: 1920px;
     position: relative;
     padding-top: 45px;
+    padding-bottom: 110px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 2;
-    margin-left: calc( (100vw - 768px) / (1920 - 768) * (185 - 85) + 85px);
+    margin: 0 auto;    
+    /*margin-left: calc( (100vw - 768px) / (1920 - 768) * (185 - 85) + 85px);*/
 }
 
 .header-logo-wrapper {
@@ -93,15 +107,17 @@ h1 {
     margin-bottom: 222px;
     width: 100%;
 }
-
+.title-top {
+    display: block;
+    margin-left: calc( (100vw - 768px) / (1920 - 768) * (205 - 1) + 1px);
+}
 .title-bottom {
     display: block;
-    margin-left: calc( (100vw - 768px) / (1920 - 768) * (416 - 97.5) + 97.5px);
+    margin-left: calc( (100vw - 768px) / (1920 - 768) * (595 - 97.5) + 97.5px);
 }
 
 .header-buttons-wrapper {
-    display: flex;
-    padding-bottom: 110px;
+    display: flex;    
 }
 
 .button {
@@ -122,6 +138,7 @@ h1 {
     text-transform: uppercase;
     text-align: left;
     margin-right: 50px;
+    padding-left: 35px;
 }
 
 .btn-apple span {
@@ -130,8 +147,7 @@ h1 {
 
 .btn-apple-icon {
     height: 50px;
-    fill: white;
-    margin-left: 35px;
+    fill: white;    
     margin-right: 25px;
 }
 
@@ -174,6 +190,7 @@ h1 {
 }
 
 .main-inner {
+    padding-top: calc( (100vw - 768px) / (1920 - 768) * (116 - 86) + 86px);
     position: relative;
 }
 
@@ -186,7 +203,7 @@ h1 {
     background-position: center;
     width: calc( (100vw - 768px) / (1920 - 768) * (991 - 751) + 751px);
     height: calc( (100vw - 768px) / (1920 - 768) * (815 - 545) + 545px);
-    top: calc( (100vw - 768px) / (1920 - 768) * (886 - 913) + 913px);
+    top: calc( (100vw - 768px) / (1920 - 768) * (957 - 1019) + 971px);
     left: calc( (100vw - 768px) / (1920 - 768) * (803 - 280) + 280px);
 }
 
@@ -230,7 +247,7 @@ h1 {
 
 .main-athlets h2 {
     margin: 0;
-    padding-top: calc( (100vw - 768px) / (1920 - 768) * (116 - 86) + 86px);
+    
     color: #e7e7e7;
     font-size: 80px;
     font-family: OpenSans-Bold;
@@ -238,8 +255,8 @@ h1 {
 }
 
 .athlets-list {
-    list-style-type: none;
-    margin-top: 0;
+    
+    list-style-type: none;    
     margin-left: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -264,6 +281,7 @@ h1 {
     margin-right: 11px;
     border-bottom: 5px solid #5e42b0;
     padding-bottom: 5px;
+    border-radius: 1px;
 }
 
 .main-players-wrapper:nth-child(3n+3) .list-itm-title-number {
@@ -296,6 +314,11 @@ h1 {
     margin-top: 31px;
 }
 
+
+.main-players-inner {
+    padding-top: calc( (100vw - 768px) / (1920 - 768) * (108 - 86) + 86px);
+}
+
 .main-players-wrapper {
     padding-left: calc( (100vw - 768px) / (1920 - 768) * (192 - 32) + 32px)
 }
@@ -308,7 +331,7 @@ h1 {
 
 .main-players h2 {
     margin: 0;
-    padding-top: calc( (100vw - 768px) / (1920 - 768) * (108 - 86) + 86px);
+    
     color: #e7e7e7;
     font-size: 80px;
     font-family: OpenSans-Bold;
@@ -331,7 +354,7 @@ h1 {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center;       
 }
 
 .card-item:nth-child(2n+2) {
@@ -361,15 +384,24 @@ h1 {
 }
 
 .card-img {
-    width: 50%;
+    width: 50%
 }
 
-.card-img img {
+.card-img img {    
+    width: 100%;
+}
+.card-img picture {    
     width: 100%;
 }
 
 .card-subject {
-    width: 50%;
+    width: calc(50% - 129px);
+    padding-left: 129px; 
+}
+
+.card-item:nth-child(2n+2) .card-subject {  
+    width: calc(50% - 221px);  
+    padding-right: 90px; 
 }
 
 .card-subject h2 {
@@ -378,13 +410,13 @@ h1 {
     color: #e7e7e7;
     text-transform: uppercase;
     margin-bottom: 101px;
-    margin-left: 129px;
+    
     margin-top: 0;
 }
 
 .card-text {
     font-size: 24px;
-    margin-left: 129px;
+    
 }
 
 .footer {
@@ -414,6 +446,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 229px;
+    padding-bottom: 52px;
 }
 
 .visually-hidden {
@@ -423,9 +457,10 @@ h1 {
     position: absolute;
 }
 
+
+
 .download-app {
-    display: flex;
-    padding-top: 229px;
+    display: flex;    
 }
 
 .download-app-link {
@@ -462,7 +497,7 @@ h1 {
     margin-right: 37px;
 }
 
-.button-link {
+/*.button-link {
     text-decoration: none;
     color: white;
     font-size: 14px;
@@ -473,13 +508,12 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
 }
-
+*/
 .footer-buttons-wrapper {
     display: flex;
     margin-top: 164px;
 }
 
 .footer-logo-wrapper {
-    margin-top: 262px;
-    padding-bottom: 52px;
+    margin-top: 262px;    
 }
