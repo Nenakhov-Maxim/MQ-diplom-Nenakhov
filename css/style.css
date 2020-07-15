@@ -209,7 +209,7 @@ h3 {
     background-position: center;
     width: calc( (100vw - 768px) / (1920 - 768) * (991 - 751) + 751px);
     height: calc( (100vw - 768px) / (1920 - 768) * (815 - 545) + 545px);
-    top: calc( (100vw - 768px) / (1920 - 768) * (957 - 1019) + 971px);
+    top: calc( (100vw - 768px) / (1920 - 768) * (930 - 1019) + 971px);
     left: calc( (100vw - 768px) / (1920 - 768) * (803 - 280) + 280px);
 }
 
