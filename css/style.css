@@ -421,9 +421,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 16vw;
-    
+    bottom: calc(50% - 77.5px);
 }
+
+    
+
 
 .position-number {
     position: relative;    
