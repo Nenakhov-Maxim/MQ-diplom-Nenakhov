@@ -49,11 +49,7 @@ h1 {
     font-size: calc( (100vw - 768px) / (1920 - 768) * (90 - 64) + 64px);
     
 }
-h3 {
-    font-size: inherit;
-    margin: 0;
-    font-weight: inherit;
-}
+
 
 .ul {
     margin: 0;
@@ -217,6 +213,8 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 55px;
 }
 
 .main-athlets-wrapper {
@@ -225,10 +223,13 @@ h3 {
 
 .main-athlets-wrapper:nth-child(3n+4) .list-itm-title-number {
     font-size: 18px;
-    font-family: OpenSans-Bold;
-    margin-right: 11px;
-    border-bottom: 5px solid #efefef;
-    padding-bottom: 5px;
+    font-family: OpenSans-Bold;   
+}
+
+.main-athlets-wrapper:nth-child(3n+4) .list-itm-title-number::before {
+    font-size: 18px;
+    font-family: OpenSans-Bold;      
+    background-color: white;    
 }
 
 .main-athlets-wrapper:nth-child(3n+4) .list-itm-title-subject {
@@ -255,8 +256,17 @@ h3 {
     background-color: #5e42b0;
 }
 
+.main-block-title {
+    font-size: inherit;
+    margin: 0;
+    font-weight: inherit;
+    margin-top: -5px;
+
+}
+
 .atlets-title-wr {
     padding-left: calc( (100vw - 768px) / (1920 - 768) * (1008 - 322) + 322px);
+    padding-bottom: 55px;
 }
 
 .atlets-title {
@@ -267,43 +277,49 @@ h3 {
     text-transform: uppercase;
 }
 
-.athlets-list {
-    
-    list-style-type: none;    
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    padding-bottom: 55px;
-}
 
 .list-itm-title {
-    display: flex;
-    padding-top: 60px;
+    display: flex;    
     align-items: end;
 }
 
 .list-itm-title-first {
-    display: flex;
-    padding-top: 60px;
+    display: flex;    
     align-items: end;
 }
 
 .list-itm-title-number {
+    position: relative;
     font-size: 18px;
     font-family: OpenSans-Bold;
-    margin-right: 11px;
-    border-bottom: 5px solid #5e42b0;
+    margin-right: 11px;    
     padding-bottom: 5px;
-    border-radius: 1px;
+    color: black;
+    
+}
+.list-itm-title-number::before {  
+    content: "";
+    position: absolute;    
+    width: 21px;
+    height: 5px;
+    background-color: #5e42b0;
+    top: 25px;
+    border-radius: 25%;
 }
 
 .main-players-wrapper:nth-child(3n+4) .list-itm-title-number {
     font-size: 18px;
     font-family: OpenSans-Bold;
-    margin-right: 11px;
-    border-bottom: 5px solid #efefef;
-    padding-bottom: 5px;
+    margin-right: 11px;    
     color: #9173e6;
+    
+}
+
+.main-players-wrapper:nth-child(3n+4) .list-itm-title-number::before {
+    font-size: 18px;
+    font-family: OpenSans-Bold;
+    margin-right: 11px;    
+    color: #9173e6;    
 }
 
 .main-players-wrapper:nth-child(3n+4) .list-itm-title-subject {
@@ -315,7 +331,7 @@ h3 {
 }
 
 .list-itm-title-subject {
-    margin-top: -5px;
+    display: flex;    
     font-size: calc( (100vw - 768px) / (1920 - 768) * (36 - 34) + 34px);
     color: #c1c1c1;
     font-family: OpenSans-Bold;
@@ -333,16 +349,19 @@ h3 {
 }
 
 .main-players-wrapper {
-    padding-left: calc( (100vw - 768px) / (1920 - 768) * (192 - 32) + 32px)
+    padding-left: calc( (100vw - 768px) / (1920 - 768) * (192 - 32) + 32px);
 }
 .players-title-wr {
-    padding-left: calc( (100vw - 768px) / (1920 - 768) * (192 - 32) + 32px)
+    padding-left: calc( (100vw - 768px) / (1920 - 768) * (192 - 32) + 32px);
+    padding-bottom: 55px;
 }
 
 .main-players {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 55px;
 }
 
 .players-title {
@@ -371,7 +390,7 @@ h3 {
 }
 
 .card-item {
-    position: relative;
+    /*position: relative;*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;       
@@ -386,6 +405,11 @@ h3 {
     justify-content: space-between;
 }
 
+.card-item:nth-child(2n+2) .position {
+    left: -84px;
+
+}
+
 .position {
     position: absolute;
     background-color: #5e42b0;
@@ -397,15 +421,27 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 16vw;
+    
 }
 
-.position span {
-    border-bottom: 5px solid #8f7bc8;
-    padding-bottom: 8px;
+.position-number {
+    position: relative;    
+}
+
+.position-number::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    background-color: #8f7bc8;
+    bottom: -9px;
+    border-radius: 25%;
+    
 }
 
 .card-img {
-    
+    position: relative;
     width: 50%
 }
 
@@ -427,13 +463,12 @@ h3 {
     padding-left: 4%;
 }
 
-.card-subject h2 {
+.card-title {
     font-family: OpenSans-Bold;
     font-size: 80px;
     color: #e7e7e7;
     text-transform: uppercase;
-    margin-bottom: 101px;
-    
+    margin-bottom: 101px;    
     margin-top: 0;
 }
 

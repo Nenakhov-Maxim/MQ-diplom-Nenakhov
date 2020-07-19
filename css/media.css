@@ -20,11 +20,17 @@
             background-position: center;
             width: 991px;
             height: 815px;
-            top: 957px;
+            top: 910px;
             left: 803px;
+        }    
+    } 
+    
+    @media (max-width: 1100px) {
+        .card-title {            
+            font-size: 70px;            
         }
-    }    
-
+    }
+    
     @media (max-width: 961px) {
         h1 {
             margin-left: 85px;
@@ -38,36 +44,37 @@
         }
         .header-title {
             margin-bottom: 312px;
-        }
-        .position {
-            flex-wrap: wrap;
-        }
+        }        
         .card-img {
             width: 100%;
         }
         .card-subject {
             width: 100%;
             padding-left: 0;
+            padding-bottom: 97px;
+            padding-top: 91px;
+            padding-left: 26px;
         }        
         .position {
+            flex-wrap: wrap;
             left: 33px;
             color: white;
             font-size: 24px;
             display: flex;
-            top: calc( (100vw - 768px) / (1200 - 768) * (712.5 - 422.5) + 422.5px);
+            bottom: -36px;
 
         }
         .card-subject h2 {
             margin-bottom: 38px;
-            margin-left: 26px;
-            margin-top: 91px;
+                        
         }
         .card-text {
-            margin-left: 26px;
-            margin-bottom: 49px;
+            margin-left: 0;            
         }
         .card-item:nth-child(n+2) .position {
-            top: calc( (100vw - 768px) / (1200 - 768) * (822.5 - 492.5) + 492.5px);
+            /*top: calc( (100vw - 768px) / (1200 - 768) * (822.5 - 492.5) + 492.5px);*/            
+            left: 33px;
+            bottom: -36px;
         }
         .download-app-link {
             display: flex;
@@ -112,8 +119,10 @@
         
     @media (max-width: 640px) {
         h1 {
-            font-size: 28px;
+            font-size: 28px; 
             margin-left: 0;
+            text-align: center;
+
         }
 
         .header {
@@ -126,10 +135,10 @@
         }
         .title-top {
             margin-bottom: 30px;
-            margin-left: 33px;
+            margin-left: -85px;
         }
         .title-bottom {
-            margin-left: 63px;
+            margin-left: 105px;
         }
         .header-title {
             margin-bottom: 90px;
@@ -177,7 +186,7 @@
         }
 
         .main-athlets-wrapper {
-            padding-left: 0;
+            padding-left: 21px;
         }
 
         .main-inner {
@@ -194,6 +203,7 @@
         
         .main-athlets-wrapper:nth-child(3n+2) {
             background-color: #fafafa;
+            padding-left: 21px;
             
         }
 
@@ -231,6 +241,11 @@
 
         .main-players-wrapper:nth-child(3n+2) {
             background-color: #fafafa;
+            padding-left: 21px;
+        }
+
+        .main-players-wrapper {            
+            padding-left: 21px;
         }
 
         .position {
@@ -238,15 +253,23 @@
             background-color: #5e42b0;
             width: 70px;
             height: 70px;
-            top: calc( (100vw - 320px) / (640 - 320) * (370 - 155) + 155px);
-           
+            bottom: -12px;           
             left: 21px;
             font-size: 14px;
+        }
+
+        .position-number::before {            
+            width: 16px;
+            height: 4px;
+            background-color: #8f7bc8;
+            bottom: -9px;
+            border-radius: 25%;
         }
 
         .card-subject {            
             padding-top: 35px;
             padding-left: 21px;
+            padding-bottom: 78px;
         }
 
         .card-subject h2 {            
@@ -257,11 +280,11 @@
 
         .card-text {
             margin-left: 0;
-            margin-bottom: 77px;
+            
         }
 
         .card-item:nth-child(n+2) .position {
-            top: calc( (100vw - 320px) / (640 - 320) * (430 - 186) + 186px);
+            bottom: -12px;
         }
 
         .footer-wrapper {          
