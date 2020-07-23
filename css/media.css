@@ -11,7 +11,7 @@
             left: 390px;
         }
 
-        .main-wrapper::before {
+        .main-players-inner::before {
             content: "";
             position: absolute;
             background-image: url(../images/basketballer_991.png);
@@ -71,8 +71,7 @@
         .card-text {
             margin-left: 0;            
         }
-        .card-item:nth-child(n+2) .position {
-            /*top: calc( (100vw - 768px) / (1200 - 768) * (822.5 - 492.5) + 492.5px);*/            
+        .card-item:nth-child(n+2) .position {                     
             left: 33px;
             bottom: -36px;
         }
@@ -231,7 +230,7 @@
             padding-left: 21px;
         }
 
-        .main-wrapper::before {            
+        .main-players-inner::before {            
             width: 302px;
             height: 248px;
             top: 1089px;

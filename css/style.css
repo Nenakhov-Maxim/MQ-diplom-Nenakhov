@@ -84,8 +84,7 @@ h1 {
     justify-content: center;
     align-items: center;
     z-index: 2;
-    margin: 0 auto;        
-    /*margin-left: calc( (100vw - 768px) / (1920 - 768) * (185 - 85) + 85px);*/
+    margin: 0 auto;          
 }
 
 .header-logo-wrapper {
@@ -103,10 +102,12 @@ h1 {
     margin-bottom: 222px;
     width: 100%;
 }
+
 .title-top {
     display: block;
     margin-left: calc( (100vw - 768px) / (1920 - 768) * (205 - 1) + 1px);
 }
+
 .title-bottom {
     display: block;
     margin-left: calc( (100vw - 768px) / (1920 - 768) * (595 - 97.5) + 97.5px);
@@ -128,6 +129,7 @@ h1 {
     align-items: center;
     
 }
+
 .button:hover {
     cursor: pointer;    
 }
@@ -196,7 +198,7 @@ h1 {
     position: relative;
 }
 
-.main-wrapper::before {
+.main-players-inner::before {
     content: "";
     position: absolute;
     background-image: url(../images/basketballer_991.png);
@@ -261,7 +263,7 @@ h1 {
 
 .atlets-title-wr {
     padding-left: calc( (100vw - 768px) / (1920 - 768) * (1008 - 322) + 322px);
-    padding-bottom: 55px;
+    margin-bottom: 55px;
 }
 
 .atlets-title {
@@ -271,7 +273,6 @@ h1 {
     font-family: OpenSans-Bold;
     text-transform: uppercase;
 }
-
 
 .list-itm-title {
     display: flex;    
@@ -314,8 +315,7 @@ h1 {
     font-size: 18px;
     font-family: OpenSans-Bold;
     margin-right: 11px;    
-    color: #9173e6;
-    
+    color: #9173e6;  
 }
 
 .main-players-wrapper:nth-child(3n+4) .list-itm-title-number::before {
@@ -325,12 +325,9 @@ h1 {
     color: #9173e6;    
 }
 
-
 .main-players-wrapper:nth-child(3n+4) .list-itm-text {
     color: #d2d3da;
 }
-
-
 
 .list-itm-text {
     font-size: calc( (100vw - 768px) / (1920 - 768) * (20 - 16) + 16px);
@@ -359,8 +356,7 @@ h1 {
 }
 
 .players-title {
-    margin: 0;
-    
+    margin: 0;    
     color: #e7e7e7;
     font-size: 80px;
     font-family: OpenSans-Bold;
@@ -383,8 +379,7 @@ h1 {
     background-color: #0a0e34;
 }
 
-.card-item {
-    /*position: relative;*/
+.card-item {    
     display: flex;
     flex-wrap: wrap;
     align-items: center;       
@@ -401,7 +396,6 @@ h1 {
 
 .card-item:nth-child(2n+2) .position {
     left: -84px;
-
 }
 
 .position {
@@ -416,10 +410,7 @@ h1 {
     align-items: center;
     justify-content: center;
     bottom: calc(50% - 77.5px);
-}
-
-    
-
+}  
 
 .position-number {
     position: relative;    
@@ -432,8 +423,7 @@ h1 {
     height: 5px;
     background-color: #8f7bc8;
     bottom: -9px;
-    border-radius: 25%;
-    
+    border-radius: 25%;    
 }
 
 .card-img {
@@ -511,8 +501,6 @@ h1 {
     position: absolute;
 }
 
-
-
 .download-app {
     display: flex;    
 }
@@ -534,8 +522,7 @@ h1 {
 .show_everyone {
     display: block;
     font-family: OpenSans-Regular;
-    font-size: calc( (100vw - 769px) / (1920 - 769) * (30 - 36) + 36px);
-    /*30px;*/
+    font-size: calc( (100vw - 769px) / (1920 - 769) * (30 - 36) + 36px);    
     color: #a496ca;
 }
 
@@ -552,18 +539,6 @@ h1 {
     margin-right: 37px;
 }
 
-/*.button-link {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: left;
-    margin-right: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-*/
 .footer-buttons-wrapper {
     display: flex;
     margin-top: 164px;
